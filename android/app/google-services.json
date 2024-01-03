@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "229699066727",
+    "project_id": "umos-2024",
+    "storage_bucket": "umos-2024.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:229699066727:android:d6d2f0ffe62f818792edc2",
+        "android_client_info": {
+          "package_name": "com.example.umos"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRODD1oaHP8jLsd5sNK3smMWemSZXHG7Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
