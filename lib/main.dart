@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:umos/registration.dart';
+import 'package:umos/chatbot.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,6 +18,7 @@ class MyApp extends StatelessWidget {
       routes: {
         'homeView': (context) => MyHomePage(),
         'registrationView': (context) => RegistrationPage(),
+        'chatbotView': (context) => MyChatbotPage(),
       },
     );
   }
@@ -51,10 +53,11 @@ class _MyHomePageState extends State<MyHomePage> {
                       image: AssetImage('assets/img/umos_logo.png'),
                     ),
                   ),
-                  Align(
-                    alignment: Alignment.bottomCenter,
-                    child: Container(
-                      margin: EdgeInsets.only(bottom: 50),
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Container(
+                      margin: EdgeInsets.only(bottom: 40),
                       width: MediaQuery.of(context).size.width*0.9,
                       height: 56,
                       child: TextButton(
@@ -69,11 +72,27 @@ class _MyHomePageState extends State<MyHomePage> {
                         child: Text('Start', style: TextStyle(fontFamily: "NotoSansKR", color: Colors.white),)
                       ),
                     ),
-                  )
-                  
+                    Container(
+                      margin: EdgeInsets.only(bottom: 50),
+                      width: MediaQuery.of(context).size.width*0.9,
+                      height: 56,
+                      child: TextButton(
+                        style: TextButton.styleFrom(
+                          backgroundColor: Color.fromARGB(255, 48, 141, 119),
+                          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
+                    
+                        ),
+                        onPressed: (){
+                          Navigator.of(context).pushNamed('chatbotView');
+                        }, 
+                        child: Text('chatbot', style: TextStyle(fontFamily: "NotoSansKR", color: Colors.white),)
+                      ),
+                    )
                 ]
       ),
+                ]
       )
+    )
     );
   }
 }
