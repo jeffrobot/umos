@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
+import 'package:flutter_dotenv/flutter_dotenv.dart';
+
 
 class MyChatbotPage extends StatefulWidget {
   @override
@@ -7,11 +9,12 @@ class MyChatbotPage extends StatefulWidget {
 }
 
 class _MyChatbotScreenState extends State<MyChatbotPage> {
+  
   String userQuestion = '';
   String chatbotResponse = '';
 
   Future<void> getChatbotResponse(String prompt) async {
-    const String functionUrl = 'https://my-chatbot-jkarv4psba-uc.a.run.app';
+    String functionUrl = dotenv.get('FUNCTION_URL');
     final response = await http.post(
       Uri.parse(functionUrl),
       body: prompt,
