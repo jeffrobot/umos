@@ -1,16 +1,14 @@
-# umos
+# 2024 Google Solution challenge
 
-A new Flutter project.
+Team - MindMenders
+Name - UMOS
+GDSC Yonsei Seoul Campus
+Members: Jang Han Yoon, Yewon Lim, Inyeop Kim, Najin Yang
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+## How to run the code
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1. git clone the repository
+2. 
+3. flutter run -d chrome --web-renderer html --release
+4. Sign up and carry out email verification to create an account 
