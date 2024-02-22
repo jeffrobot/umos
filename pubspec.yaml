@@ -36,6 +36,20 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
   firebase_core: ^2.24.2
+  carousel_slider: ^4.2.1
+  flutter_form_builder: ^9.1.1
+  form_builder_validators: ^9.1.0
+  flutter_animate: ^4.3.0
+  firebase_auth: ^4.16.0
+  shared_preferences: ^2.2.2
+  cloud_firestore: ^4.8.2
+  cloud_firestore_web: ^3.6.3
+  flutter_gemini: ^2.0.3
+  speech_to_text: ^6.5.1
+  permission_handler: ^9.2.0
+  flutter_markdown: ^0.6.18+3
+
+
 
 dev_dependencies:
   flutter_test:
@@ -61,8 +75,15 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
+    - assets/img/umos_tut1.png
+    - assets/img/umos_tut2.png
+    - assets/img/umos_tut3.png
     - assets/img/galaxy.png
     - assets/img/umos_logo.png
+    - assets/img/umos_stars.png
+    - assets/img/umos_stars2.png
+    - assets/img/umos_stars3.png
+    - assets/img/umos_stars4.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
